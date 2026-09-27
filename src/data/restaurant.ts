@@ -125,7 +125,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: "urban-smash",
-    name: "UrbanBite Double Smash",
+    name: "HUNGRY KYA! Double Smash",
     description: "Two seared beef patties, aged cheddar, house sauce and skin-on fries.",
     price: 15.5,
     category: "burgers",
@@ -278,7 +278,7 @@ export const reviews = [
 export const contactInfo = {
   address: "42 Harbour Street, Riverside District, Portland, OR 97204",
   phone: "+1 (503) 555-0148",
-  email: "hello@urbanbite.com",
+  email: "hello@HUNGRY KYA!.com",
   hours: [
     { days: "Monday – Thursday", time: "11:00 AM – 10:30 PM" },
     { days: "Friday – Saturday", time: "11:00 AM – 12:00 AM" },

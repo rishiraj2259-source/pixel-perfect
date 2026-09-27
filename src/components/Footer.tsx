@@ -2,9 +2,9 @@ import { Facebook, Instagram, Mail, MapPin, Phone, Twitter, UtensilsCrossed } fr
 import { contactInfo, navLinks } from "@/data/restaurant";
 
 const socials = [
-  { label: "UrbanBite on Instagram", href: "https://instagram.com", icon: Instagram },
-  { label: "UrbanBite on Facebook", href: "https://facebook.com", icon: Facebook },
-  { label: "UrbanBite on X", href: "https://x.com", icon: Twitter },
+  { label: "HUNGRY KYA! on Instagram", href: "https://instagram.com", icon: Instagram },
+  { label: "HUNGRY KYA! on Facebook", href: "https://facebook.com", icon: Facebook },
+  { label: "HUNGRY KYA! on X", href: "https://x.com", icon: Twitter },
 ];
 
 export function Footer() {
@@ -94,7 +94,7 @@ export function Footer() {
 
       <div className="border-t border-charcoal-foreground/10 py-6">
         <p className="section-shell text-center text-xs text-charcoal-foreground/55">
-          © {new Date().getFullYear()} UrbanBite Restaurant. All rights reserved.
+          © {new Date().getFullYear()} HUNGRY KYA! Restaurant. All rights reserved.
         </p>
       </div>
     </footer>

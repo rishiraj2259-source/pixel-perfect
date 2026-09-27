@@ -9,7 +9,7 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-## UrbanBite structure
+## HUNGRY KYA! structure
 - The site is one page: `src/routes/index.tsx` composes section components from `src/components/` and hash links handle in-page navigation, because the brief asked for smooth-scroll single-page navigation.
 - Menu, offers, reviews and contact content live in `src/data/restaurant.ts`, kept out of components so copy can be edited without touching UI.
 - Cart state lives in `src/hooks/useCart.tsx` (React context), so any section can add items and the cart panel stays in sync.

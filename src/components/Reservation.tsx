@@ -66,7 +66,7 @@ export function Reservation() {
       <div className="section-shell">
         <SectionHeading
           eyebrow="Reservations"
-          title="Book a table at UrbanBite"
+          title="Book a table at HUNGRY KYA!"
           description="Tell us when you are coming and we will have the table ready. For parties over ten, give us a call."
         />
 

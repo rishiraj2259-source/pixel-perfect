@@ -13,9 +13,9 @@ import { Footer } from "@/components/Footer";
 import { CartPanel } from "@/components/CartPanel";
 import { CartProvider } from "@/hooks/useCart";
 
-const title = "UrbanBite — Good Food. Great Moments.";
+const title = "HUNGRY KYA! — Good Food. Great Moments.";
 const description =
-  "UrbanBite is a Portland neighbourhood restaurant serving wood-fired pizza, aged steaks and handmade pasta. Browse the menu, grab an offer or book a table.";
+  "HUNGRY KYA! is a Portland neighbourhood restaurant serving wood-fired pizza, aged steaks and handmade pasta. Browse the menu, grab an offer or book a table.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "UrbanBite — Good Food. Great Moments." },
+      { title: "HUNGRY KYA! — Good Food. Great Moments." },
       {
         name: "description",
         content:
-          "UrbanBite restaurant: wood-fired pizza, aged steaks and handmade pasta in Portland's Riverside District.",
+          "HUNGRY KYA! restaurant: wood-fired pizza, aged steaks and handmade pasta in Portland's Riverside District.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -97,7 +97,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/hungry-kya.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,

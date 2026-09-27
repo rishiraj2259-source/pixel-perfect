@@ -6,7 +6,7 @@ export function Hero() {
     <section id="home" className="relative isolate min-h-[92vh] overflow-hidden bg-charcoal">
       <img
         src={heroImage}
-        alt="Warmly lit UrbanBite dining room with set tables and brass pendant lamps"
+        alt="Warmly lit HUNGRY KYA! dining room with set tables and brass pendant lamps"
         width={1600}
         height={1008}
         className="absolute inset-0 -z-10 size-full object-cover"
@@ -28,7 +28,7 @@ export function Hero() {
           </h1>
 
           <p className="animate-in fade-in slide-in-from-bottom-8 mt-6 max-w-xl text-base leading-relaxed text-charcoal-foreground/75 duration-1000 sm:text-lg">
-            UrbanBite is a neighbourhood kitchen built around wood fire, market produce and
+            HUNGRY KYA! is a neighbourhood kitchen built around wood fire, market produce and
             unhurried evenings. Wood-fired pizza, aged steaks and handmade pasta, served in a room
             made for lingering.
           </p>

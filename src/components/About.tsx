@@ -10,7 +10,7 @@ export function About() {
           <div className="relative">
             <img
               src={aboutImage}
-              alt="UrbanBite head chef plating a main course in the open kitchen"
+              alt="HUNGRY KYA! head chef plating a main course in the open kitchen"
               loading="lazy"
               width={1200}
               height={1200}
@@ -27,13 +27,13 @@ export function About() {
 
         <Reveal delay={120}>
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-            About UrbanBite
+            About HUNGRY KYA!
           </span>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
             A kitchen built on fresh produce and long dinners
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            UrbanBite started as a ten-table room above a bakery, run by two cooks who wanted to
+            HUNGRY KYA! started as a ten-table room above a bakery, run by two cooks who wanted to
             serve the food they grew up eating. Ten years later the room is bigger, the wood oven
             is busier, and the approach has not changed: buy well, cook simply, and never rush a
             guest out the door.
