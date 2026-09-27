@@ -1,24 +1,52 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { Features } from "@/components/Features";
+import { PopularDishes } from "@/components/PopularDishes";
+import { MenuSection } from "@/components/MenuSection";
+import { About } from "@/components/About";
+import { Offers } from "@/components/Offers";
+import { Reviews } from "@/components/Reviews";
+import { Reservation } from "@/components/Reservation";
+import { Footer } from "@/components/Footer";
+import { CartPanel } from "@/components/CartPanel";
+import { CartProvider } from "@/hooks/useCart";
+
+const title = "UrbanBite — Good Food. Great Moments.";
+const description =
+  "UrbanBite is a Portland neighbourhood restaurant serving wood-fired pizza, aged steaks and handmade pasta. Browse the menu, grab an offer or book a table.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "restaurant" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <CartProvider>
+      <Navbar />
+      <main>
+        <Hero />
+        <Features />
+        <PopularDishes />
+        <MenuSection />
+        <About />
+        <Offers />
+        <Reviews />
+        <Reservation />
+      </main>
+      <Footer />
+      <CartPanel />
+    </CartProvider>
   );
 }
