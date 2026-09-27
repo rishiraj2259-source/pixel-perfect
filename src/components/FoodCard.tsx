@@ -1,5 +1,5 @@
 import { Plus } from "lucide-react";
-import { formatPrice, type MenuItem } from "@/data/restaurant";
+import { categories, formatPrice, type MenuItem } from "@/data/restaurant";
 import { useCart } from "@/hooks/useCart";
 
 export function FoodCard({ item }: { item: MenuItem }) {
@@ -17,7 +17,7 @@ export function FoodCard({ item }: { item: MenuItem }) {
           className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <span className="absolute left-4 top-4 rounded-full bg-charcoal/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-charcoal-foreground backdrop-blur">
-          {item.category === "mains" ? "Main Course" : item.category}
+          {categories.find((category) => category.id === item.category)?.label ?? item.category}
         </span>
       </div>
 
